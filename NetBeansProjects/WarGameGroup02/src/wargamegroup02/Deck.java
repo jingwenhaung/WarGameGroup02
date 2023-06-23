@@ -8,8 +8,8 @@ public class Deck {
     //each deck create one cards
     public Deck(){
         cards = new ArrayList<>();
-        for(Card.Suit suit: Card.Suit.value()){
-            for(Card.Value value: Card.Value.value()){
+        for(Card.Suit suit: Card.Suit.values()){
+            for(Card.Value value: Card.Value.values()){
                 cards.add(new Card(value, suit));
             }
         }
