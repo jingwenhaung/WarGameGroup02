@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package wargamegroup02;
-
-/**
- *
- * @author Jingwen
- */
 public class WarGameGroup02 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Create three players with their names and IDs
+        Player p1 = new Player("John", 123);
+        Player p2 = new Player("Ella", 234);
+        Player p3 = new Player("ABC", 245);
+
+        // Create a new WarGame instance with the three players
+        WarGame warGame = new WarGame(p1, p2,p3);
+
+        // Deal cards to the players
+        warGame.dealCards();
+        
+        // Start the game
+        warGame.playGame();
     }
     
 }
